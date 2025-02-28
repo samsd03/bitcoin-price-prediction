@@ -4,7 +4,7 @@
 This repository contains multiple machine learning and deep learning models for Bitcoin price prediction using historical price data. The models include:
 - **LSTM (Long Short-Term Memory)**
 - **XGBoost (Extreme Gradient Boosting)**
-- **Other ML Algorithms** (e.g., Random Forest, Linear Regression)
+- **Other ML Algorithms** (Need to be added in future) 
 
 ## Features
 - Data preprocessing and feature engineering
@@ -22,7 +22,7 @@ This repository contains multiple machine learning and deep learning models for 
 - **Pandas & NumPy** (for data manipulation)
 
 ## Dataset
-The dataset used for training the models consists of historical Bitcoin price data.
+The dataset used for training the models consists of historical Bitcoin price data. The dataset is fetched from https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data .
 
 ## Installation
 Clone the repository:

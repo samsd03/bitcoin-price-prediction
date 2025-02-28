@@ -173,3 +173,6 @@ cython_debug/
 # Exclude csv input data as it is big
 *.csv
 
+# Excluding vs code
+.vscode/
+
