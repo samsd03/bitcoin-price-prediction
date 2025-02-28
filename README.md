@@ -56,12 +56,17 @@ Model performance is evaluated using RMSE and visualization:
         RMSE: 13.37
         MAPE: 0.57%
         Accuracy: 99.43%
+  
+![lstm](https://github.com/user-attachments/assets/049352d2-2d4a-4c83-af40-322cf2275283)
 
 - XGBOOST Model Evaluation:
 
         RMSE: 89.14 %
         MAPE: 5.06 %
         Accuracy: 94.94 %
+![xgboost](https://github.com/user-attachments/assets/ea7219ab-998c-47f1-aa75-0ccc2df36f5b)
+
+
 
 ## Contributing
 Feel free to contribute by adding new models, improving existing ones, or optimizing performance.
