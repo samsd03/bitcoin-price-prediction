@@ -12,7 +12,8 @@ def load_data(file_path):
     Returns:
         pd.DataFrame: Cleaned DataFrame with required columns.
     """
-    df = pd.read_csv(file_path)
+    # Currently only running the model on 1 million data due to limited system capacity
+    df = pd.read_csv(file_path, nrows=1000000)
     df = df.dropna()  # Remove missing values
     return df[['Close']]  # Use only the closing price
 

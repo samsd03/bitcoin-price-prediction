@@ -16,7 +16,7 @@ args = parser.parse_args()
 
 if args.model == "lstm":
     print("Training LSTM model...")
-    model = build_lstm_model(time_steps=1)
+    model = build_lstm_model(time_steps=20)
     model = train_lstm_model(model, X_train, y_train, X_test, y_test, epochs=10, batch_size=128)
     save_lstm_model(model, "models/lstm_model.h5")
     predictions = model.predict(X_test)
