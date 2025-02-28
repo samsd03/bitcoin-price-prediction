@@ -1,5 +1,6 @@
 import argparse
 from src.data_preprocessing import prepare_data
+from src.evaluation_metrics import evaluate_model
 from src.lstm_model import build_lstm_model, train_lstm_model, save_lstm_model
 from src.xgboost_model import train_xgboost, save_xgboost_model, predict_xgboost
 import matplotlib.pyplot as plt
@@ -20,7 +21,7 @@ if args.model == "lstm":
     model = train_lstm_model(model, X_train, y_train, X_test, y_test, epochs=10, batch_size=128)
     save_lstm_model(model, "models/lstm_model.h5")
     predictions = model.predict(X_test)
-    predictions = scaler.inverse_transform(predictions)
+    predictions = scaler.inverse_transform(predictions) 
 
 elif args.model == "xgboost":
     print("Training XGBoost model...")
@@ -28,6 +29,8 @@ elif args.model == "xgboost":
     save_xgboost_model(model, "models/xgboost_model.json")
     predictions = predict_xgboost(model, X_test)
     predictions = scaler.inverse_transform(predictions.reshape(-1, 1))
+
+rmse, mape, accuracy = evaluate_model(model, X_test, y_test, scaler, model_type=args.model)
 
 # Transform y_test back to original scale
 y_test_original = scaler.inverse_transform(y_test.reshape(-1, 1))

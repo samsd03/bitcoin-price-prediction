@@ -44,15 +44,24 @@ python train_lstm.py  # For LSTM
 python train_xgboost.py  # For XGBoost
 ```
 
-### Predict Bitcoin Prices
+### Predict Bitcoin Prices (Still Need to create this script)
 ```bash
 python predict.py --model lstm --input latest_price.csv
 ```
 
 ## Results
 Model performance is evaluated using RMSE and visualization:
-- LSTM: **XX% accuracy**
-- XGBoost: **XX% accuracy**
+- LSTM Model Evaluation:
+
+        RMSE: 13.37
+        MAPE: 0.57%
+        Accuracy: 99.43%
+
+- XGBOOST Model Evaluation:
+
+        RMSE: 89.14 %
+        MAPE: 5.06 %
+        Accuracy: 94.94 %
 
 ## Contributing
 Feel free to contribute by adding new models, improving existing ones, or optimizing performance.
