@@ -22,7 +22,11 @@ This repository contains multiple machine learning and deep learning models for 
 - **Pandas & NumPy** (for data manipulation)
 
 ## Dataset
-The dataset used for training the models consists of historical Bitcoin price data. The dataset is fetched from https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data .
+The dataset used for training the models consists of historical Bitcoin price data. 
+
+The dataset is fetched from https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data .
+
+After downloading the csv file, please save this to data/raw/btcusd_1-min_data.csv
 
 ## Installation
 Clone the repository:
